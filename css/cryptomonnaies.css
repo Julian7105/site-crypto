@@ -1,0 +1,513 @@
+/* Page d'accueil */
+
+.custom-shape-divider-bottom-1671554633 {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1671554633 svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 163px;
+    transform: rotateY(180deg);
+    background: linear-gradient(rgba(250, 237, 27,1) 100%, rgb(67, 218, 16) 35%);
+}
+
+.custom-shape-divider-bottom-1671554633 .shape-fill {
+    fill: rgb(30, 30, 30);
+}
+
+.containerPresentation{
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(rgb(67, 218, 16) 35%, rgba(250, 237, 27,1) 100%);
+    display: flex;
+}
+
+
+.containerPTitle{
+    width: 650px;
+    height: 100%;
+    margin-left: 12%;
+    margin-top: 150px;
+}
+
+
+.presentationTitle{
+    font-size: 50px;
+    color: white;
+    font-weight: bolder;
+}
+
+.presentationSousTitle{
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.containerCryptoCircle{
+    width: 300px;
+    height: 300px;
+    margin-top: 80px;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cryptoCircle{
+    width: 275px;
+    height: 275px;
+    position: relative;
+    border-radius: 50%;
+    transition: 0.5s;
+    animation: spin 6s infinite ease-in-out;
+}
+
+.btc{
+    width: 90px;
+    height: 90px;
+    background: url("/images/Bitcoin.svg.png") center/cover;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    position: absolute;
+    animation: spinCrypto 6s infinite ease-in-out;
+    animation: spinCryptoBTC 6s infinite ease-in-out;
+}
+.eth{
+    width: 90px;
+    height: 135px;
+    background: url("/images/eth.png") center/cover;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: spinCrypto 6s infinite ease-in-out;
+}
+.avax{
+    width: 90px;
+    height: 90px;
+    background: url("/images/avax.png") center/cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: spinCrypto 6s infinite ease-in-out;
+}
+.pol{
+    width: 90px;
+    height: 90px;
+    background: url("/images/pol.png") center/cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: spinCrypto 6s infinite ease-in-out;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+        width: 225px;
+        height: 225px;
+    }
+    50% {
+        transform: rotate(180deg);
+        width: 300px;
+        height: 300px;
+    }
+    75% {
+        transform: rotate(270deg);
+        width: 225px;
+        height: 225px;
+    }
+    100% {
+        transform: rotate(360deg);
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@keyframes spinCrypto{
+    0%{
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-90deg);
+    }
+    50% {
+        transform: rotate(-180deg);
+    }
+    75% {
+        transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes spinCryptoBTC{
+    0%{
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-90deg);
+    }
+    50% {
+        transform: rotate(-180deg);
+    }
+    75% {
+        transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes spinCryptoETH{
+    0%{
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-90deg);
+    }
+    50% {
+        transform: rotate(-180deg);
+    }
+    75% {
+        transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes spinCryptoAVAX{
+    0%{
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-90deg);
+    }
+    50% {
+        transform: rotate(-180deg);
+    }
+    75% {
+        transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes spinCryptoPOL{
+    0%{
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-90deg);
+    }
+    50% {
+        transform: rotate(-180deg);
+    }
+    75% {
+        transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.containerCrypto{
+    width: 100%;
+    height: max-content;
+    margin-top: 30px;
+}
+
+
+/* Première section */
+
+.containerCryptoFirst{
+    max-width: 100%;
+    height: max-content;
+    background: rgb(30, 30, 30);
+    padding-top: 20px;
+}
+
+/* Deuxième section */
+
+.containerCryptoSecond{
+    max-width: 100%;
+    height: max-content;
+    background: rgb(30, 30, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerCryptoLeft2{
+    width: 70%;
+    height: max-content;
+    background: rgb(30, 30, 30);
+}
+
+.containerBitcoin{
+    width: 30%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.bitcoinT{
+    width: 200px;
+    height: 200px;
+    background: url("/images/biitcoin.png") center/cover no-repeat;
+    background-size: contain;
+}
+
+/* Troisième section */
+
+.containerCryptoThree{
+    max-width: 100%;
+    height: max-content;
+    background: rgb(30, 30, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerCryptoLeft3{
+    width: 70%;
+    height: max-content;
+    background: rgb(30, 30, 30);
+}
+
+.containerEthereum{
+    width: 30%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.ethereumEffect{
+    background: linear-gradient(rgb(46, 46, 46) 50%, rgb(31, 31, 31) 100%);
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ethereumT{
+    width: 200px;
+    height: 200px;
+    background: url("/images/eth.png") center/cover no-repeat;
+    background-size: contain;
+}
+
+
+/* Quatrième section */
+.containerCryptoFour{
+    max-width: 100%;
+    height: max-content;
+    background: rgb(30, 30, 30);
+}
+
+
+
+.containerSmartContract{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smartContract{
+    width: 100%;
+    height: 92vh;
+    background: url("/images/smart.jpg") center/cover no-repeat;
+    background-size: contain;
+}
+
+
+/* Responsive */
+
+
+@media screen and (max-width: 1200px) {
+    .containerCryptoCircle{
+        margin-top: 60px;
+    }
+    .cryptoCircle{
+        width: 200px;
+        height: 200px;
+    }
+    .btc, .avax, .pol{
+        width: 60px;
+        height: 60px;
+    }
+    .eth{
+        width: 60px;
+        height: 90px;
+    }
+    @keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+        width: 125px;
+        height: 125px;
+    }
+    50% {
+        transform: rotate(180deg);
+        width: 200px;
+        height: 200px;
+    }
+    75% {
+        transform: rotate(270deg);
+        width: 125px;
+        height: 125px;
+    }
+    100% {
+        transform: rotate(360deg);
+        width: 200px;
+        height: 200px;
+    }
+}
+}
+
+@media screen and (max-width: 1080px){
+    .containerPresentation{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        
+    }
+    .containerPTitle{
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        height: 50%;
+    }
+    .containerCryptoCircle{
+        margin: 30px;
+        height: 50%;
+    }
+    .smartContract{
+        margin: 0;
+    }
+}
+
+
+@media screen and (max-width: 820px) {
+    .bitcoinT{
+        width: 100px;
+        height: 100px;
+    }
+    .ethereumEffect{
+        width: 125px;
+        height: 125px;
+    }
+    .ethereumT{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .containerContentBlockFirst{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .presentationTitle{
+        font-size: 35px;
+    }
+    .presentationSousTitle{
+        font-size: 15px;
+    }
+    .containerPresentation{
+        padding-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .presentationTitle{
+        font-size: 25px;
+    }
+    .presentationSousTitle{
+        font-size: 12px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .cryptoCircle{
+        width: 150px;
+        height: 150px;
+    }
+    .btc, .avax, .pol{
+        width: 40px;
+        height: 40px;
+    }
+    .eth{
+        width: 40px;
+        height: 60px;
+    }
+    @keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+        width: 95px;
+        height: 95px;
+    }
+    50% {
+        transform: rotate(180deg);
+        width: 150px;
+        height: 150px;
+    }
+    75% {
+        transform: rotate(270deg);
+        width: 95px;
+        height: 95px;
+    }
+    100% {
+        transform: rotate(360deg);
+        width: 150px;
+        height: 150px;
+    }
+    }
+}
+
+@media screen and (max-width: 350px){
+    .bitcoinT{
+        width: 60px;
+        height: 60px;
+    }
+    .ethereumEffect{
+        width: 85px;
+        height: 85px;
+    }
+    .ethereumT{
+        width: 60px;
+        height: 60px;
+    }
+}
+

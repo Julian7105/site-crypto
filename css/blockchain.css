@@ -1,0 +1,278 @@
+/* Page d'accueil */
+
+.custom-shape-divider-bottom-1670951010 {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    background: linear-gradient(rgba(6,22,195,1) 35%, rgba(178,50,248,1) 100%);
+}
+
+.custom-shape-divider-bottom-1670951010 svg {
+    position: relative;
+    display: block;
+    width: calc(138% + 1.3px);
+    height: 163px;
+    background: linear-gradient(rgba(178,50,248,1) 100%, rgba(6,22,195,1) 35%);
+}
+
+
+
+.custom-shape-divider-bottom-1670951010 .shape-fill {
+    fill: #1E1E1E;
+}
+
+.containerPresentation{
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(rgba(6,22,195,1) 35%, rgba(178,50,248,1) 100%);
+    display: flex;
+}
+
+
+.containerPTitle{
+    width: 600px;
+    height: 100%;
+    margin-left: 15%;
+    margin-top: 150px;
+}
+
+
+.presentationTitle{
+    font-size: 50px;
+    color: white;
+    font-weight: bolder;
+}
+
+.presentationSousTitle{
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+
+
+.sheet{
+    width: 350px;
+    height: 350px;
+    background: url("/images/copy-dynamic-gradient.png") center/cover no-repeat;
+    margin-top: 20%;
+    margin-left: 20%;
+    animation: levitationSheet 4s infinite;
+}
+
+.lock{
+    width: 150px;
+    height: 150px;
+    background: url("/images/lock-dynamic-gradient.png") center/cover no-repeat;
+    margin-top: 15%;
+    position: absolute;
+    animation: levitationLock 4s infinite;
+}
+
+@keyframes levitationSheet {
+    50%{
+        transform: translateY(10px);
+    }
+}
+@keyframes levitationLock {
+    50%{
+        transform: translateY(20px);
+    }
+}
+
+
+/* Première section */
+
+.containerBlockFirst{
+    max-width: 100%;
+    height: max-content;
+    background: rgb(30, 30, 30);
+}
+
+
+.containerBlockDes{
+    width: 100%;
+    height: max-content;
+}
+
+.containerContentBlockFirst {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+}
+
+.trilemme{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 20px;
+}
+
+.titleTrilemme{
+    font-size: 25px;
+    text-align: center;
+      -webkit-animation: colorchange 10s linear infinite; 
+        animation: colorchange 10s linear infinite;
+}
+
+@-webkit-keyframes colorchange {
+    0%   {color: white;}
+    20%  {color: #00c000;}
+    40%  {color: #FF0000;}
+    60%  {color: #FFFF00;}
+    80%  {color: #0000FF;}
+    100% {color: white;}
+}
+@keyframes colorchange {
+    0%   {color: white}
+    20%  {color: #00c000;}
+    40%  {color: #FF0000;}
+    60%  {color: #FFFF00;}
+    80%  {color: #0000FF;}
+    100% {color: white;}
+}
+
+
+/* Deuxième section */
+
+.containerBlockSecond{
+    width: 100%;
+    height: max-content;
+    background: rgb(30, 30, 30);
+    padding-top: 20px;
+}
+
+.containerTypeBlock{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerType{
+    width: 100%;
+}
+
+.titleType{
+    color: white;
+    font-size: 25px;
+    margin-left: 5%;
+}
+
+
+
+/* Responsive */
+
+@media screen and (max-width: 1200px) {
+    .sheet{
+        width: 250px;
+        height: 250px;
+        margin-top: 25%;
+    }
+    .lock{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 925px) {
+    .containerPresentation{
+        display: inline-block;
+        height: max-content;
+    }
+    .containerPTitle{
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+    .containerBlockItemsPresentation{
+        padding-bottom: 5px;
+        display: flex;
+        justify-content: center;
+    }
+    .lock{
+        margin-top: 15%;
+        margin-right: 25%;
+        width: 150px;
+        height: 150px;
+    }
+    .sheet{
+        margin-top: 5%;
+        margin-left: 25%;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    .titleTrilemme, .titleType{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .titleTrilemme, .titleType{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .containerContentBlockFirst{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .presentationTitle{
+        font-size: 40px;
+    }
+    .presentationSousTitle{
+        font-size: 15px;
+    }
+    .lock{
+        width: 90px;
+        height: 90px;
+        margin-top: 50px;
+        margin-right: 80px;
+    }
+    .sheet{
+        width: 170px;
+        height: 170px;
+        margin-top: 0;
+    }
+    .containerPresentation{
+        padding-bottom: 25px;
+    }
+    
+}
+
+@media screen and (max-width: 470px){
+    .presentationTitle{
+        font-size: 25px;
+    }
+    .presentationSousTitle{
+        font-size: 12px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .titleTrilemme, .titleType{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 314px){
+    .title2{
+        margin-top: 5px;
+    }
+};

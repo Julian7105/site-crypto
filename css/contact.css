@@ -1,0 +1,141 @@
+.containerContact{
+    width: 100%;
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerInfos{
+    width: 90%;
+    height: 70vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 6px 8px 4px black;
+}
+
+.containerHaut{
+    background: linear-gradient(black 30%, rgb(45, 45, 45) 100%);
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.photo{
+    width: 400px;
+    height: 100%;
+    background: url("/images/PP.jpg") center/cover no-repeat;
+    border-radius: 10px;
+}
+.filter{
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgba(45, 45, 45, 0) 45%, black 100%);
+    border-radius: 10px;
+    opacity: 0.70;
+}
+
+.nom{
+    color: white;
+    font-size: 60px;
+}
+
+.cent{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.containerBas{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: linear-gradient(rgb(45, 45, 45) 45%, black 100%);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.containInfo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info{
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+}
+
+
+
+/* Responsive */
+
+@media screen and (max-width: 1200px) {
+    .nom{
+        font-size:50px;
+    }
+    .info{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .nom{
+        font-size: 40px;
+    }
+    .info{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .nom{
+        font-size: 30px;
+    }
+    .info{
+        font-size: 12px;
+    }
+    .containerInfos{
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .containerBas{
+        flex-direction: column;
+        height: 30%;
+    }
+    .containerHaut{
+        flex-direction: column;
+        height: 70%;
+    }
+    .photo{
+        width: 100%;
+        height: 1500px;
+        margin-bottom: 35px;
+    }
+    .containerInfos{
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .nom{
+        font-size: 25px;
+    }
+    .info{
+        font-size: 10px;
+    }
+}

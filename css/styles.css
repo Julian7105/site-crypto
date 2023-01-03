@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body{
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background: rgb(30, 30, 30);
+}
+
+.pageOnLoad{
+    overflow-y: hidden;
+}
+
+.center{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerW{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background: black;
+    opacity: 0.6;
+}
+
+.containerTitle{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+.title{
+    font-size: 30px;
+    margin: 20px;
+    text-align: center;
+}
+
+.text{
+    text-align: justify;
+    font-size: 18px;
+    word-spacing: 1.5px;
+    line-height: 2em;
+    color: white;
+    margin: 3vw;
+}
+
+.separ{
+    height: 1px;
+    width: 0%;
+    background: white;
+}
+
+.lienText{
+    color: rgb(4, 0, 256);
+}
+.lienText:hover{
+    transition: 0.2s;
+    color: rgb(4, 0, 206);
+}
+
+/* Loader */
+
+
+.spinner {
+   position: absolute;
+   width: 9px;
+   height: 9px;
+   justify-content: center;
+   align-items: center;
+}
+
+.spinner div {
+   position: absolute;
+   width: 50%;
+   height: 150%;
+   background: #474bff;
+   transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1%));
+   animation: spinner-fzua35 1s calc(var(--delay) * 1s) infinite ease;
+}
+
+.spinner div:nth-child(1) {
+   --delay: 0.1;
+   --rotation: 36;
+   --translation: 150;
+}
+
+.spinner div:nth-child(2) {
+   --delay: 0.2;
+   --rotation: 72;
+   --translation: 150;
+}
+
+.spinner div:nth-child(3) {
+   --delay: 0.3;
+   --rotation: 108;
+   --translation: 150;
+}
+
+.spinner div:nth-child(4) {
+   --delay: 0.4;
+   --rotation: 144;
+   --translation: 150;
+}
+
+.spinner div:nth-child(5) {
+   --delay: 0.5;
+   --rotation: 180;
+   --translation: 150;
+}
+
+.spinner div:nth-child(6) {
+   --delay: 0.6;
+   --rotation: 216;
+   --translation: 150;
+}
+
+.spinner div:nth-child(7) {
+   --delay: 0.7;
+   --rotation: 252;
+   --translation: 150;
+}
+
+.spinner div:nth-child(8) {
+   --delay: 0.8;
+   --rotation: 288;
+   --translation: 150;
+}
+
+.spinner div:nth-child(9) {
+   --delay: 0.9;
+   --rotation: 324;
+   --translation: 150;
+}
+
+.spinner div:nth-child(10) {
+   --delay: 1;
+   --rotation: 360;
+   --translation: 150;
+}
+
+@keyframes spinner-fzua35 {
+   0%, 10%, 20%, 30%, 50%, 60%, 70%, 80%, 90%, 100% {
+      transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1%));
+   }
+
+   50% {
+      transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1.5%));
+   }
+}
+
+
+
+/* Header navigation */
+
+header{
+    width: 100%;
+    height: 50px;
+}
+
+nav{
+    width: 100%;
+    height: 100%;
+    background: rgb(30, 30, 30);
+}
+
+ul{
+    width: 100%;
+    background-attachment: fixed;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+li{
+    height: 15px;
+    width: max-content;
+    margin: 25px;
+    font-size: 12px;
+}
+
+
+.lienNav{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.lienNav:hover{
+    color: gray;
+    transition: 0.2s;
+}
+
+
+/* Small screen */
+
+.smallScreen{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger{
+    width: 60px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.barre{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+.barre:last-child{
+    margin-bottom: 0;
+}
+
+.h1 .h2 .h3{
+    z-index: 0;
+}
+
+.clickHam{
+    width: max-content;
+    height: max-content;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.namePage{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.textNamePage{
+    color: white;
+    font-size: 15px;
+}
+
+
+/* Dépliant nav */
+
+.depliantNav{
+    position: absolute;
+    width: 200px;
+    height: max-content;
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: none;
+    z-index: 10000;
+}
+
+.depliantNavClose{
+    display: block;
+}
+
+.onglet{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    animation: openDepliant 0.5s ease;
+}
+
+
+@keyframes openDepliant {
+    0%{
+        height: 20px;
+        width: 100px;
+    }
+}
+
+
+.onglet:hover{
+    transition: 0.2s;
+    background: grey;
+    cursor: pointer;
+}
+
+.onglet:last-child{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.lienDepliant{
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+/* Animations */
+.separOpen{
+    width: 90%;
+    transition: 2.5s;
+}
+.separClose{
+    width: 0%;
+    transition: 1s;
+}
+
+
+/* Footer */
+footer{
+    width: 100%;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(40, 40, 40);
+    
+
+}
+
+.lienFooter :first-child{
+    margin-bottom: 5px;
+}
+
+.lienFooter :last-child{
+    margin-top: 5px;
+}
+
+.lienFooter{
+    color: white;
+    font-size: 13px;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.lienFooter:hover{
+    color: gray;
+    transition: 0.2s;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 1100px) {
+    .text{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    .title{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    ul{display: none;}
+
+}
+@media screen and (min-width: 600px){
+    .smallScreen{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .title{
+        font-size: 18px;
+    }
+    .text{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .lienFooter{
+        font-size: 9px;
+    }
+
+}
+
+@media screen and (max-width: 350px){
+    .title{
+        font-size: 15px;
+    }
+    .text{
+        font-size: 7px;
+    }
+
+}

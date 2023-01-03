@@ -1,0 +1,231 @@
+/* Image + Texte */
+.imageAccueil{
+    width: 100%;
+    height: 80%;
+    background: url("/images/imageAccueil.jpg") center/cover fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divTextAccueil{
+    width: max-content;
+    height: max-content;
+    background: rgb(30, 30, 30);
+    box-shadow: 3px 8px 6px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.textAccueil{
+    color: white;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+
+/* Contenu */
+.containerAccueil{
+    width: 100%;
+    height: max-content;
+    background: rgb(30, 30, 30);
+}
+
+
+/* Première section */
+.containerTitle{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    background: rgb(30, 30, 30);
+
+}
+
+
+
+.containerFirst{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-top: 60px;
+}
+
+.containerLeft1{
+    width: 50%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.containerRight1{
+    width: 50%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    margin-top: 0;
+    margin-right: 0;
+}
+
+
+
+
+/* Deuxième section */
+.containerSecond{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.blockchainImg{
+    width: 300px;
+    height: 300px;
+    background: url("/images/blockchain.png") center/cover no-repeat;
+    margin-right: 10px;
+}
+.bitcoinImg{
+    width: 200px;
+    height: 200px;
+    background: url("/images/Bitcoin.png") center/cover no-repeat;
+    margin-left: 10px;
+}
+
+
+/* Troisième section */
+.containerThree{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.containerRight2{
+    width: 70%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.containerLeft2{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgSato{
+    width: 100%;
+    height: 100%;
+    background: url("/images/sato.jpg") center/cover no-repeat;
+    filter: blur(
+        1px
+    );
+}
+
+.filter{
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interro{
+    font-size: 15em;
+    color: white;
+}
+
+/* Responsive */
+
+
+@media screen and (min-width: 1280px) {
+    .blockchainImg{
+        margin-right: 30px;
+        transform: translateX(var(--x));
+    }
+    .bitcoinImg{
+        margin-left: 30px;
+        transform: translateX(var(--x));
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .containerSecond{
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .imgSato{
+        transform: scale(0.7);
+    }
+}
+
+@media screen and (max-width: 950px) {
+    lord-icon{
+        transform: scale(0.65);
+    }
+    .containerRight1{
+        margin-left: 0;
+    }
+}
+
+
+
+
+@media screen and (max-width: 820px) {
+    .divTextAccueil{
+        transform: scale(0.7);
+    }
+    .textAccueil{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .blockchainImg{
+        transform: scale(0.7);
+    }
+    .bitcoinImg{
+        transform: scale(0.7);
+    }
+    .interro{
+        font-size: 10em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .containerSecond{
+        flex-direction: column;
+    }
+    .bitcoinImg{
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 358px){
+    .title2{
+        margin-top: 5px;
+    }
+}
+
